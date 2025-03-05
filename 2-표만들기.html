@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>2-표만들기</title>
+</head>
+<body>
+
+  <h1>표만들기 연습</h1>
+  <h2>테이블 기본</h2>
+  <table border="1px" bgcolor="yellow">
+    <tr bgcolor="green">
+      <td>A</td>
+      <td>B</td>
+    </tr>
+    <tr>
+      <td>C</td>
+      <td bgcolor="red">D</td>
+    </tr>
+  </table>
+  <!-- 동일한 속성을 넣을때 태그 속성의 우선순위는 해당 태그를 기준으로 가까운 거리에 있는 것이 높다. -->
+
+  <h2>열병합테이블(가로방향)</h2>
+  <table border="1px" width="500px" height="400px" cellpadding="50px" cellspacing="0">
+    <tr>
+      <td colspan="2">A</td>
+    </tr>
+    <tr>
+      <td>B</td> 
+      <td align="right" valign="bottom">C</td> 
+    </tr>
+  </table>
+  <!-- 
+  align="left/center/right" : 수평정렬(가로방향)
+  valign="top/middle/bottom" : 수직정렬(세로방향)
+  width="숫자"(가로크기), height="숫자"(세로높이)
+  -->
+
+  <h2>행병합테이블(세로방향)</h2>
+  <table border="10px" width="400px" height="300px" background="image/flower.jpg">
+    <tr>
+      <td rowspan="2">A</td>
+      <td>B</td>
+    </tr>
+    <tr>
+      <td>C</td>
+    </tr>
+  </table>
+
+  <h2>표속의 표만들기</h2>
+  <table border="1px" width="600px" height="500px" align="center">
+    <tr>
+      <th colspan="2">표의 제목</th>
+      <!-- th는 td와 동일하게 내용을 채우는 태그, 가운데정렬,진하게 자동기능 -->
+    </tr>
+    <tr>
+      <td>
+        <table border="1px">
+          <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+          </tr>
+        </table>
+      </td>
+      <td>
+
+      </td>
+    </tr>
+  </table>
+
+  <h2>표만들기 실습</h2>
+  <h3 align="center">Table-1</h3>
+  <table border="1px" width="400px" height="250px" align="center">
+    <tr>
+      <td rowspan="3">A</td>
+      <td>B</td>
+      <td rowspan="3">E</td>
+    </tr>
+    <tr>
+      <td>C</td>
+    </tr>
+    <tr>
+      <td>D</td>
+    </tr>
+    <tr>
+      <td colspan="3">F</td>
+    </tr>
+  </table>
+  
+  <h3 align="center">Table-2</h3>
+  <table border="1px" width="400px" height="250px" align="center">
+    <tr>
+      <td>A</td>
+      <td>C</td>
+      <td rowspan="2">E</td>
+      <td>F</td>
+    </tr>
+    <tr>
+      <td>B</td>
+      <td>D</td>
+      <td>G</td>
+    </tr>
+    <tr>
+      <td colspan="3">H</td>
+      <td>I</td>
+    </tr>
+  </table>
+
+
+</body>
+</html>
