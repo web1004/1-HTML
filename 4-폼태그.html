@@ -11,7 +11,7 @@
   <form>
     <h1>input 태그:inline</h1>
     <p>이름을 입력하세요</p>
-    <label for="name">성명</label>  <!-- label:inline -->
+    <label for="name">성명</label> <!-- label:inline -->
     <input type="text" id="name" name="name">
 
     <p>비밀번호를 입력하세요</p>
@@ -19,18 +19,18 @@
     <input type="password" id="pw" name="pw">
 
     <!-- <label for="이름">....</label> <input id="이름">
-    label태그는 input박스 주변의 글자를 클릭해도 커서가 나오게 하는게 하는 기능으로 label태그 for의 이름과 input태그의 id이름이 동일해야 한다. ( 웹접근성)
+    label태그는 input박스 주변의 글자를 클릭해도 커서가 나오게 하는게 하는 기능으로 label태그 for의 이름과 input태그의 id이름이 동일해야 한다. (웹접근성 준수) 
     -->
 
     <p>인터넷을 사용하는 횟수는?</p>
-    <input type="radio" id="hour1" name="hour">매일 5~6시간
-    <input type="radio" id="hour2" name="hour">매일 3~4시간
-    <input type="radio" id="hour3" name="hour" checked>매일 1~2시간
-    <input type="radio" id="hour4" name="hour">일주일에 3시간 이하
+    <input type="radio"  name="hour">매일 5~6시간
+    <input type="radio"  name="hour">매일 3~4시간
+    <input type="radio"  name="hour" checked>매일 1~2시간
+    <input type="radio"  name="hour">일주일에 3시간 이하
 
-    <!--
-      checked="checked" -> checked(생략가능)
-      속성의 값을 반드시 입력해야 하지만,속성과 값이 동일한 경우에는 생략할 수 있다.  
+    <!-- 
+    checked="checked" -> checked(생략가능)
+    속성의 값을 반드시 입력해야 하지만,속성과 값이 동일한 경우에는 생략할 수 있다.  
     -->
 
     <p>관심분야를 선택하세요!</p>
@@ -38,11 +38,11 @@
     <input type="checkbox" value="item2" name="item">스포츠,연예
     <input type="checkbox" value="item3" name="item">정치,경제
     <input type="checkbox" value="item4" name="item">기타
-    
+
     <!--중요!!
-      라디오버튼과 체크박스는
-      name은 같은 질문에 대한 답이므로  이름이 같아야 하고,
-      id 또는 value 는 각각의 답에 대한 고유이름이므로 각각 달라야 한다.
+    라디오버튼과 체크박스는
+    name은 같은 질문에 대한 답이므로  이름이 같아야 하고,
+    id 또는 value 는 각각의 답에 대한 고유이름이므로 각각 달라야 한다.
     -->
 
     <p>파일을 첨부하세요!</p>
@@ -65,6 +65,9 @@
     <input type="submit" value="검색">
     <!--type="search":검색어를 입력했을때 오른쪽에 엑스표시 나옴-->
 
+    <p>좋아하는 색상은?</p>
+    <input type="color" name="color">
+
     <p>참여인원<small>(최대50명)</small></p>
     <input type="number" name="number" value="5" min="0" max="50" step="5">
     <!-- value:초기값, min:최소값, max:최대값, step:몇씩 증가 or 감소 -->
@@ -72,9 +75,6 @@
     <p>희망단계<small>(하,중,상)</small></p>
     <input type="range" name="range" value="1" min="1" max="3">	
     <!--type="range":범위를 정하여 숫자를 조절할수 있는 슬라이드막대가 나옴-->
-
-    <p>좋아하는 색상은?</p>
-    <input type="color" name="color">
 
     <p>조회기간</p>  
     <input type="date"> ~ <input type="date">
@@ -97,9 +97,9 @@
     <button type="button">일반버튼</button>
     <hr>
 
-    <h1>fieldset태그:폼의 그룹을 만들때 주로 사용함</h1>
+    <h1>fieldset태그:폼의 그룹을 만들때 주로 사용함(block)</h1>
     <fieldset>
-      <legend>로그인</legend>   <!-- 그룹제목으로 생략가능 -->
+      <legend>로그인</legend> <!-- 그룹제목으로 생략가능 -->
       <label for="id">아이디</label>
       <input type="text" id="id">
       <label for="password">비밀번호</label>
@@ -121,7 +121,7 @@
     </select>
     <hr>
 
-    <h1>textarea태그</h1>
+    <h1>textarea태그:inline</h1>
     <textarea name="text" rows="8" cols="50"></textarea>
     <!--한줄에 50자씩 입력할수 있는 8줄크기-->
     <hr>
@@ -140,6 +140,7 @@
           <input type="text" id="user_num" required placeholder="하이픈없이숫자입력" maxlength="8">
           <!--placeholder:input안에 힌트표시, maxlength:최대값 지정하기-->
         </li>
+        </li>
         <li>
           <label for="user_item">수강과목</label>
           <input type="text" id="user_item" value="자바스크립트" readonly>
@@ -147,7 +148,7 @@
         </li>
       </ul>
       <button>신청하기</button>
-      <!-- <input type="submit" value="신청하기"> ->button과 동일함-->
+      <!-- <input type="submit" value="신청하기"> ->button태그와 동일함-->
     </fieldset>
   </form>
 

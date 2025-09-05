@@ -7,7 +7,7 @@
 <body>
   
   <!-- <a>~</a>태그 : inline -->
-  <!-- 책갈피1: id="책갈피이름"  -->
+  <!-- 책갈피 만들기 : id="책갈피이름" -->
   <h1 id="top">하이퍼링크</h1>
   <ol>
     <li>외부사이트 연결하기
@@ -22,61 +22,63 @@
         <li><a href="1-기본태그.html">기본태그 파일</a></li>
         <li><a href="2-표만들기.html">표만들기 파일</a></li>
       </ul>
-    </li> 
+    </li>
     <li>이미지에 연결하기
       <ul>
-        <li>이미지에 <strong><em>한개의 링크</em></strong> 연결하기<br>
-          <a href="http://jr.ezenac.co.kr" target="_blank"><img src="image/flower.jpg" alt="보라색꽂" title="이젠아카데미로 이동합니다."></a>
+        <li>
+          이미지에 <strong><em>한개의 링크</em></strong> 연결하기<br>
+          <a href="http://jr.ezenac.co.kr" target="_blank"><img src="image/flower.jpg" alt="보라색꽃" title="이젠아카데미로 이동합니다."></a>
         </li>
-        <li>이미지에 <strong><em>여러개의 링크(이미지맵-사각형)</em></strong> 연결하기<br>
+        <li>
+          이미지에 <strong><em>여러개의 링크(이미지맵-사각형)</em></strong> 연결하기<br>
           <img src="image/popup.jpg" alt="" usemap="#link1">
 
-          <!-- 이미지맵(소스의 위치는 상관이 없음) -->
+          <!-- 이미지맵(화면상에 노출이 되는 태그가 아니므로 소스의 삽입위치는 상관없음) -->
           <map name="link1">
-            <area shape="rect" coords="179,405,334,460" href="down.html" alt="쿠폰다운받기">
+            <area shape="rect" coords="172,403,342,462" href="down.html" alt="쿠폰다운받기">
           </map>
         </li>
-        <li>이미지에 <strong><em>여러개의 링크(이미지맵-원형)</em></strong> 연결하기<br>
+        <li>
+          이미지에 <strong><em>여러개의 링크(이미지맵-원형)</em></strong> 연결하기<br>
           <img src="image/browser.jpg" alt="" usemap="#link2">
 
           <!-- 이미지맵 -->
           <map name="link2">
-            <area shape="circle" coords="69,65,50" target="_blank" href="https://www.google.com/intl/ko_kr/chrome/" alt="크롬">
-            <area shape="circle" coords="205,65,50" target="_blank" href="https://www.mozilla.org/ko/firefox/new/" alt="파이어폭스">
-            <area shape="circle" coords="346,65,50" target="_blank" href="https://www.microsoft.com/ko-kr/edge" alt="엣지">
-            <area shape="circle" coords="475,65,50" target="_blank" href="https://safari.softonic.kr/" alt="사파리">
-            <area shape="circle" coords="614,65,50" target="_blank" href="https://www.opera.com/ko" alt="오페라">
+            <area shape="circle" coords="69,65,50" href="https://www.google.com/intl/ko_kr/chrome/" alt="크롬" target="_blank">
+            <area shape="circle" coords="205,65,50" href="https://www.mozilla.org/ko/firefox/new/" alt="파이어폭스" target="_blank">
+            <area shape="circle" coords="346,65,50" href="https://www.microsoft.com/ko-kr/edge" alt="엣지" target="_blank">
+            <area shape="circle" coords="475,65,50" href="https://safari.softonic.kr" alt="사파리" target="_blank">
+            <area shape="circle" coords="614,65,50" href="https://www.opera.com/ko" alt="오페라" target="_blank">
           </map>
         </li>
       </ul>
     </li>
-    <!-- 책갈피2 (id="img")-->
-    <li id="img">특정한 기능 연결하기
+    <li>특정한 기능 연결하기
       <ul>
-        <li>
-          <!-- 책갈피 확인을 위한 이미지삽입 -->
-          <img src="image/flower.jpg" alt=""><br>
-          <img src="image/flower.jpg" alt=""><br>
-          <img src="image/flower.jpg" alt=""><br>
-          <img src="image/flower.jpg" alt=""><br>
-          <img src="image/flower.jpg" alt=""><br>
-          <img src="image/flower.jpg" alt=""><br>
-          <img src="image/flower.jpg" alt=""><br>
-          <img src="image/flower.jpg" alt=""><br>
-          <img src="image/flower.jpg" alt=""><br>
-          <img src="image/flower.jpg" alt=""><br>
-          <img src="image/flower.jpg" alt=""><br>
+        <li id="imglist">
+          <!-- 책갈피 확인을 위한 임시로 이미지삽입 -->
+          <img src="image/flower.jpg" alt="">
+          <img src="image/flower.jpg" alt="">
+          <img src="image/flower.jpg" alt="">
+          <img src="image/flower.jpg" alt="">
+          <img src="image/flower.jpg" alt="">
+          <img src="image/flower.jpg" alt="">
+          <img src="image/flower.jpg" alt="">
+          <img src="image/flower.jpg" alt="">
+          <img src="image/flower.jpg" alt="">
+          <img src="image/flower.jpg" alt="">
         </li>
         <li><a href="sms:01090294589">문자보내기</a></li>  <!-- 모바일용 -->
         <li><a href="tel:027338781">전화걸기</a></li>  <!-- 모바일용 -->
         <li><a href="mailto:1234@gamil.com">메일보내기</a></li>
       </ul>
     </li>
-    <li>특정한 위치 연결하기   <!-- 세로의 길이가 길었을때(컨텐츠의 양이 많을때) 일정한 위티에 책갈피를 걸어서 연결하는것을 말한다. -->
+    <!-- 세로의 길이가 길었을때(컨텐츠의 양이 많을때) 일정한 위티에 책갈피를 걸어서 연결하는것을 말한다. -->
+    <li>특정한 위치 연결하기
       <ul>
         <li><a href="#top">현재 파일의 맨 위로 이동하기</a></li>
-        <li><a href="#img">현재 파일의 여러개 꽃이미지가 나오는 위치로 이동하기</a></li>
-        <li><a href="1-기본태그.html#img2">기본태그파일(외부파일)의 이미지 삽입위치로 이동하기</a></li>
+        <li><a href="#imglist">현재 파일의 여러개 꽃이미지가 나오는 위치로 이동하기</a></li>
+        <li><a href="1-기본태그.html#img">기본태그파일(외부파일)의 이미지 삽입위치로 이동하기</a></li>
       </ul>
     </li>
   </ol>

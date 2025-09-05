@@ -5,7 +5,7 @@
   <title>2-표만들기</title>
 </head>
 <body>
-
+  
   <h1>표만들기 연습</h1>
   <h2>테이블 기본</h2>
   <table border="1px" bgcolor="yellow">
@@ -21,13 +21,13 @@
   <!-- 동일한 속성을 넣을때 태그 속성의 우선순위는 해당 태그를 기준으로 가까운 거리에 있는 것이 높다. -->
 
   <h2>열병합테이블(가로방향)</h2>
-  <table border="1px" width="500px" height="400px" cellpadding="50px" cellspacing="0">
+  <table border="1px" width="500px" height="400px">
     <tr>
       <td colspan="2">A</td>
     </tr>
     <tr>
-      <td>B</td> 
-      <td align="right" valign="bottom">C</td> 
+      <td>B</td>
+      <td align="right" valign="bottom">C</td>
     </tr>
   </table>
   <!-- 
@@ -37,7 +37,7 @@
   -->
 
   <h2>행병합테이블(세로방향)</h2>
-  <table border="10px" width="400px" height="300px" background="image/flower.jpg">
+  <table border="1px" width="400px" height="300px" background="image/flower.jpg">
     <tr>
       <td rowspan="2">A</td>
       <td>B</td>
@@ -47,8 +47,8 @@
     </tr>
   </table>
 
-  <h2>표속의 표만들기</h2>
-  <table border="1px" width="600px" height="500px" align="center">
+  <h2>표소의 표만들기</h2>
+  <table border="1px" width="600px" height="500px">
     <tr>
       <th colspan="2">표의 제목</th>
       <!-- th는 td와 동일하게 내용을 채우는 태그, 가운데정렬,진하게 자동기능 -->
@@ -74,12 +74,32 @@
         </table>
       </td>
       <td>
-
+        <table border="1px" align="center">
+          <tr>
+            <th colspan="2">UXUI디자인 웹 프론트엔드개발 부트캠프(생성형AI 활용/피그마)</th>
+          </tr>
+          <tr>
+            <td>훈련기간</td>
+            <td>2025.07.17 ~ 2026.01.08</td>
+          </tr>
+          <tr>
+            <td>훈련시간</td>
+            <td>8교시(09:00 ~ 17:40)</td>
+          </tr>
+          <tr>
+            <td>훈련강사</td>
+            <td>김경숙</td>
+          </tr>
+          <tr>
+            <td>훈령장소</td>
+            <td>402호</td>
+          </tr>
+        </table>
       </td>
     </tr>
   </table>
 
-  <h2>표만들기 실습</h2>
+  <h2 align="center">표만들기 실습</h2>
   <h3 align="center">Table-1</h3>
   <table border="1px" width="400px" height="250px" align="center">
     <tr>
@@ -116,7 +136,6 @@
       <td>I</td>
     </tr>
   </table>
-
 
 </body>
 </html>
