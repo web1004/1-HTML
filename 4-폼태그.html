@@ -2,7 +2,6 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>4-폼태그</title>
 </head>
 <body>
@@ -10,23 +9,24 @@
   <!-- form태그:block -->
   <form>
     <h1>input 태그:inline</h1>
-    <p>이름을 입력하세요</p>
-    <label for="name">성명</label> <!-- label:inline -->
-    <input type="text" id="name" name="name">
+    <p>이름은 입력하세요</p>
+    <!-- label:inline -->
+    <label for="name">성명</label> 
+    <input type="text" id="name">
 
     <p>비밀번호를 입력하세요</p>
     <label for="pw">비밀번호</label>
-    <input type="password" id="pw" name="pw">
+    <input type="password" id="pw">
 
     <!-- <label for="이름">....</label> <input id="이름">
     label태그는 input박스 주변의 글자를 클릭해도 커서가 나오게 하는게 하는 기능으로 label태그 for의 이름과 input태그의 id이름이 동일해야 한다. (웹접근성 준수) 
     -->
 
     <p>인터넷을 사용하는 횟수는?</p>
-    <input type="radio"  name="hour">매일 5~6시간
-    <input type="radio"  name="hour">매일 3~4시간
-    <input type="radio"  name="hour" checked>매일 1~2시간
-    <input type="radio"  name="hour">일주일에 3시간 이하
+    <input type="radio" id="hour1" name="hour">매일 5~6시간
+    <input type="radio" id="hour2" name="hour">매일 3~4시간
+    <input type="radio" id="hour3" name="hour" checked>매일 1~2시간
+    <input type="radio" id="hour4" name="hour">일주일에 3시간 이하
 
     <!-- 
     checked="checked" -> checked(생략가능)
@@ -137,9 +137,8 @@
         </li>
         <li>
           <label for="user_num">학번</label>
-          <input type="text" id="user_num" required placeholder="하이픈없이숫자입력" maxlength="8">
+          <input type="text" id="user_num" required placeholder="하이픈없이 숫자입력" maxlength="8">
           <!--placeholder:input안에 힌트표시, maxlength:최대값 지정하기-->
-        </li>
         </li>
         <li>
           <label for="user_item">수강과목</label>
@@ -148,7 +147,8 @@
         </li>
       </ul>
       <button>신청하기</button>
-      <!-- <input type="submit" value="신청하기"> ->button태그와 동일함-->
+      <!-- <input type="submit" value="신청하기"> 위의 button태그와 동일함
+      value속성은 어디에 들어가냐에 따라서 기능의 차이가 있음-->
     </fieldset>
   </form>
 
